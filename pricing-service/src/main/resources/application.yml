@@ -5,3 +5,16 @@ spring:
 server:
   port: 8082
 
+eureka:
+  instance:
+    lease-renewal-interval-in-seconds: 1
+    lease-expiration-duration-in-seconds: 2
+  client:
+    service-url:
+      default: http://localhost:8761/eureka/
+    healthcheck:
+      enabled: true
+
+logging:
+  level:
+    com.udacity.pricing-service: DEBUG
