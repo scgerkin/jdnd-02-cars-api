@@ -20,7 +20,7 @@ public class PriceClientTest {
     @Test
     public void searchOnIdReturnsExpectedResults() {
         String priceString = priceClient.getPrice(1L);
-        Assert.assertEquals("USD 12345", priceString);
+        Assert.assertEquals("USD 25000.0", priceString);
     }
 
 }
