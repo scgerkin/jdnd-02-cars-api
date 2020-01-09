@@ -42,9 +42,8 @@ public class PricingService {
      * @return random price for a vehicle
      */
     private static BigDecimal randomPrice() {
-//        return new BigDecimal(ThreadLocalRandom.current().nextDouble(1, 5))
-//                .multiply(new BigDecimal(5000d)).setScale(2, RoundingMode.HALF_UP);
-        return new BigDecimal(12345);//fixme remove after verifying eureka is working
+        return new BigDecimal(ThreadLocalRandom.current().nextDouble(1, 5))
+                .multiply(new BigDecimal(5000d)).setScale(2, RoundingMode.HALF_UP);
     }
 
 }
